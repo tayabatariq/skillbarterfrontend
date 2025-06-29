@@ -1,0 +1,4 @@
+/* In your global CSS or Tailwind config */
+.clip-about {
+  clip-path: ellipse(70% 55% at 50% 45%);/
+}

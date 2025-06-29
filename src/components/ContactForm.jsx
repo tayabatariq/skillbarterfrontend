@@ -50,40 +50,56 @@ export default function ContactForm() {
     <div className="min-h-screen bg-gradient-to-r from-purple-100 to-blue-100 flex items-center justify-center px-4 py-12">
       <div className="max-w-6xl w-full bg-white rounded-xl shadow-xl grid md:grid-cols-2 gap-10 p-8 md:p-14">
         {/* ─── Left Side ─── */}
-        <div className="flex flex-col justify-between">
-          <div>
-            <h2 className="text-4xl font-bold text-gray-900 leading-tight">
-              <span className="text-purple-600">Let’s Collaborate</span> <br />
-              Exchange Skills & Ideas
-            </h2>
-            <p className="mt-4 text-gray-600">
-              Whether you want to offer your talent or find someone to help on your journey —
-              we’re just a message away. Let's build together on SkillBarter.
-            </p>
+        <div className="flex flex-col justify-between max-w-xl">
+  <div>
+    <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-snug">
+      <span className="text-purple-600">Let’s Collaborate</span><br />
+      Exchange Skills & Ideas
+    </h2>
+    <p className="mt-3 text-gray-600 text-sm sm:text-base leading-relaxed">
+      Whether you want to offer your talent or find someone to help on your journey —
+      we’re just a message away. <span className="text-purple-500 font-medium">Let’s build together on SkillBarter.</span>
+    </p>
 
-            <div className="mt-6 text-sm text-gray-700 space-y-2">
-              <p>📞 +92 312 345 6789</p>
-              <p>📧 support@skillbarter.com</p>
-              <p>🌍 Visit Us Online Anytime</p>
-            </div>
-          </div>
+    {/* 💡 Added useful list for value */}
+    <ul className="mt-3 list-disc list-inside text-gray-500 text-sm space-y-1">
+      <li>Collaborate with talented individuals</li>
+      <li>Exchange your skills to grow</li>
+      <li>Find mentors and learners like you</li>
+    </ul>
 
-          <div className="mt-10 flex items-center gap-4 bg-purple-50 p-4 rounded-lg">
-            <img
-              src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=80&q=80"
-              alt="team member"
-              className="rounded-full w-16 h-16 object-cover"
-            />
-            <div>
-              <p className="text-sm font-semibold text-gray-800">
-                Want to Join Our Talent Network?
-              </p>
-              <a href="/signup" className="text-purple-600 text-sm underline">
-                View Opportunities
-              </a>
-            </div>
-          </div>
-        </div>
+    {/* ✅ Social Icons */}
+    <div className="mt-5 text-gray-700 space-x-4 flex items-center text-2xl">
+      <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+        <i className="ri-facebook-circle-fill hover:text-blue-600 transition duration-300"></i>
+      </a>
+      <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+        <i className="ri-twitter-x-line hover:text-black transition duration-300"></i>
+      </a>
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+        <i className="ri-linkedin-box-fill hover:text-blue-500 transition duration-300"></i>
+      </a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+        <i className="ri-instagram-line hover:text-pink-500 transition duration-300"></i>
+      </a>
+    </div>
+  </div>
+
+  {/* 👤 Call to action box */}
+  <div className="mt-8 flex items-center gap-4 bg-purple-50 p-4 rounded-lg shadow-sm">
+    <img
+      src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=80&q=80"
+      alt="team member"
+      className="rounded-full w-14 h-14 object-cover"
+    />
+    <div>
+      <p className="text-sm font-semibold text-gray-800">Want to Join Our Talent Network?</p>
+      <a href="/signup" className="text-purple-600 text-sm underline hover:text-purple-800">
+        View Opportunities
+      </a>
+    </div>
+  </div>
+</div>
 
         {/* ─── Right Side: Form ─── */}
         <div className="bg-slate-50 text-black p-6 md:p-8 rounded-xl shadow-inner">
@@ -166,7 +182,9 @@ export default function ContactForm() {
             </button>
 
             {responseMsg && (
-              <p className="text-sm text-center text-green-600 mt-2">{responseMsg}</p>
+              <p className="text-sm text-center text-green-600 mt-2">
+                {responseMsg}
+              </p>
             )}
           </form>
         </div>
