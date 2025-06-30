@@ -11,7 +11,7 @@ const Home = () => {
       {/* Your content */}
       <Homecarosal/>
       <Homecenter/>
-      <div className="flex-grow">...</div>
+      <div className="flex-grow"></div>
       <Footer />
     </div>
     </>

@@ -8,7 +8,7 @@ const Contact = () => {
         {/* Your content */}
 
         <ContactForm/>
-        <div className="flex-grow">...</div>
+        <div className="flex-grow"></div>
         <Footer />
       </div>
   </>

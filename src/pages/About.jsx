@@ -8,7 +8,7 @@ const About = () => {
 <div className="flex flex-col min-h-screen">
       {/* Your content */}
       <Aboutheader/>
-      <div className="flex-grow">...</div>
+      <div className="flex-grow"></div>
       <Footer />
     </div>
 </>  )

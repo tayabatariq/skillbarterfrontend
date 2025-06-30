@@ -5,7 +5,7 @@ import logo from '../assets/logo.png'
 const Navbar = () => {
   const navigate=useNavigate()
   return (
-    <nav className=" sticky top-0 left-0 bg-white shadow-md px-6 py-4 flex items-center justify-between">
+    <nav className=" sticky top-0 left-0 z-50 bg-white shadow-md px-6 py-4 flex items-center justify-between">
       
       {/* Left: Logo */}
       <div className="flex items-center">
@@ -28,8 +28,11 @@ const Navbar = () => {
           Contact
         </Link>
         <Link to='/skills' className="text-gray-700 hover:text-blue-600 font-medium">
-          Skills
+          Explore Skills
         </Link>
+        {/* <Link to={`/user/${user._id}`}> */}
+  {/* <div className="..."> card UI yahan */}
+
       </div>
 
       {/* Right: Buttons */}
