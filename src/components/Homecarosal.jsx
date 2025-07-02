@@ -28,7 +28,7 @@ export default function Homecarosal() {
             <p className="text-lg sm:text-2xl mb-8 max-w-4xl">
               SkillBarter is your gateway to a global network where individuals trade knowledge, expertise, and real-world skills. Whether you're an artist, a coder, or a mentor — there’s a place for you to shine.
             </p>
-            <div className="space-x-6">
+            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 items-center">
               <a href="/signup" className="bg-purple-700 hover:bg-purple-800 text-white px-8 py-3 text-lg rounded-xl font-semibold shadow-lg">
                 Join as a Talent
               </a>
@@ -53,7 +53,7 @@ export default function Homecarosal() {
             <p className="text-lg sm:text-2xl mb-8 max-w-4xl">
               Why keep your skills to yourself when you can earn, grow, and contribute to meaningful projects? SkillBarter connects passionate individuals with those who need their expertise — no boundaries, just opportunities.
             </p>
-            <div className="space-x-6">
+            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 items-center">
               <a href="/signup" className="bg-purple-700 hover:bg-purple-800 text-white px-8 py-3 text-lg rounded-xl font-semibold shadow-lg">
                 Get Started
               </a>
@@ -78,7 +78,7 @@ export default function Homecarosal() {
             <p className="text-lg sm:text-2xl mb-8 max-w-4xl">
               Be part of a powerful ecosystem where skills are the currency. Collaborate with developers, designers, marketers, and dreamers just like you. Your next big opportunity might be just one click away.
             </p>
-            <div className="space-x-6">
+            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 items-center">
               <a href="/signup" className="bg-purple-700 hover:bg-purple-800 text-white px-8 py-3 text-lg rounded-xl font-semibold shadow-lg">
                 Become a Member
               </a>
