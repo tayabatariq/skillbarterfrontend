@@ -8,6 +8,7 @@ import Signup from "../components/Signup";
 import Login from "../components/Login";
 import OtpVerification from "../components/OtpVerification";
 import UserProfile from "../components/UserProfile";
+import Profilepage from "../pages/Profilepage";
 
 const Routerrs = () => {
   return <>
@@ -19,6 +20,8 @@ const Routerrs = () => {
 <Route path="/skills" element={<Skills/>}></Route>
 <Route path="/signup" element={<Signup/>}></Route>
 <Route path="/login" element={<Login/>}></Route>
+<Route path="/userprofile" element={<Profilepage/>}></Route>
+
 <Route path="/verify" element={<OtpVerification/>}></Route>
 <Route path="/user/:userId" element={<UserProfile />} />
 
