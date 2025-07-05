@@ -1,6 +1,7 @@
 import React from 'react'
 import Footer from '../components/Footer'
 import UserCardList from '../components/UserCardList'
+import ChatBot from '../components/ChatBot'
 
 const Skills = () => {
   return (
@@ -9,6 +10,7 @@ const Skills = () => {
         {/* Your content */}
         <div className="flex-grow">
         <UserCardList/>
+      <ChatBot/>
 
         </div>
         <Footer />

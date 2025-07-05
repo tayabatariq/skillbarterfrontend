@@ -48,16 +48,7 @@ export default function Footer() {
       {/* ──────── Link Grid ──────── */}
       <section className="max-w-6xl mx-auto px-4 pb-16 grid gap-12 lg:grid-cols-5">
         {/* Logo (replace later with your own SVG or Image) */}
-        <div className="flex items-start">
-          <svg
-            viewBox="0 0 24 24"
-            className="w-8 h-8 text-indigo-500"
-            fill="currentColor"
-            aria-hidden="true"
-          >
-            <path d="M2 12c2.23-3.78 5.83-6 10-6s7.88 1.9 10 6c-2.12 4.1-5.72 6-10 6S4.23 16.1 2 12z" />
-          </svg>
-        </div>
+       
 
         {/* Columns */}
         {Object.entries(footerLinks).map(([title, items]) => (

@@ -283,8 +283,6 @@ const Homecenter = () => {
 
 
 {/* faqs */}
-{/* ❓ FAQ Section */}
-{/* ❓ FAQ Section with <details> and <summary> */}
 <div className="bg-white py-16 px-6">
   <div className="max-w-5xl mx-auto text-center">
     <h2 className="text-4xl sm:text-5xl font-bold text-purple-700 mb-6">
@@ -296,9 +294,9 @@ const Homecenter = () => {
 
     <div className="space-y-4 text-left">
       {/* FAQ 1 */}
-      <details className="bg-gray-50 p-6 rounded-xl shadow group cursor-pointer">
-        <summary className="text-xl font-semibold text-purple-600 mb-2 outline-none group-open:mb-4">
-          👉 What is SkillBarter?
+      <details className="bg-gray-50 p-6 rounded-xl shadow group cursor-pointer transition-all duration-300">
+        <summary className="text-xl font-semibold text-purple-600 mb-2 outline-none group-open:mb-4 transition duration-300">
+          What is SkillBarter?
         </summary>
         <p className="text-gray-700">
           SkillBarter is a platform where users can exchange skills, offer freelance services, or collaborate on projects — without traditional job barriers.
@@ -306,9 +304,9 @@ const Homecenter = () => {
       </details>
 
       {/* FAQ 2 */}
-      <details className="bg-gray-50 p-6 rounded-xl shadow group cursor-pointer">
-        <summary className="text-xl font-semibold text-purple-600 mb-2 outline-none group-open:mb-4">
-          💸 Is SkillBarter free to use?
+      <details className="bg-gray-50 p-6 rounded-xl shadow group cursor-pointer transition-all duration-300">
+        <summary className="text-xl font-semibold text-purple-600 mb-2 outline-none group-open:mb-4 transition duration-300">
+          Is SkillBarter free to use?
         </summary>
         <p className="text-gray-700">
           Yes! Creating an account and connecting with others is completely free. You can exchange services or negotiate your own terms.
@@ -316,9 +314,9 @@ const Homecenter = () => {
       </details>
 
       {/* FAQ 3 */}
-      <details className="bg-gray-50 p-6 rounded-xl shadow group cursor-pointer">
-        <summary className="text-xl font-semibold text-purple-600 mb-2 outline-none group-open:mb-4">
-          🤝 Can I both offer and request skills?
+      <details className="bg-gray-50 p-6 rounded-xl shadow group cursor-pointer transition-all duration-300">
+        <summary className="text-xl font-semibold text-purple-600 mb-2 outline-none group-open:mb-4 transition duration-300">
+          Can I both offer and request skills?
         </summary>
         <p className="text-gray-700">
           Absolutely! You can list what you’re good at and also what you need help with. It’s a two-way collaboration system.
@@ -326,9 +324,9 @@ const Homecenter = () => {
       </details>
 
       {/* FAQ 4 */}
-      <details className="bg-gray-50 p-6 rounded-xl shadow group cursor-pointer">
-        <summary className="text-xl font-semibold text-purple-600 mb-2 outline-none group-open:mb-4">
-          📧 How do I contact a talent?
+      <details className="bg-gray-50 p-6 rounded-xl shadow group cursor-pointer transition-all duration-300">
+        <summary className="text-xl font-semibold text-purple-600 mb-2 outline-none group-open:mb-4 transition duration-300">
+          How do I contact a talent?
         </summary>
         <p className="text-gray-700">
           Just view their profile and use the contact or booking option to start a chat or send a proposal.
@@ -337,6 +335,7 @@ const Homecenter = () => {
     </div>
   </div>
 </div>
+
 
 
 

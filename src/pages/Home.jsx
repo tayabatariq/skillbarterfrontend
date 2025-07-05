@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Homecarosal from '../components/Homecarosal'
 import Homecenter from '../components/Homecenter'
+import ChatBot from '../components/ChatBot'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       {/* Your content */}
       <Homecarosal/>
       <Homecenter/>
+      <ChatBot/>
       <div className="flex-grow"></div>
       <Footer />
     </div>

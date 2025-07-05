@@ -53,7 +53,7 @@ const Aboutheader = () => {
     {/* 👈 Left Side Image */}
     <div className="relative w-full h-[350px]">
       <img
-        src="https://unknown-universityas.com/wp-content/uploads/2023/01/Copy-of-Blue-Modern-Corporate-Digital-Finance-Presentation-Deck-1536x864.jpg"
+        src="https://www.shutterstock.com/image-photo/concentrated-young-female-student-engaged-600nw-2458397479.jpg"
         alt="mission"
         className="w-full h-full object-cover rounded-2xl shadow-xl clip-mission"
       />
