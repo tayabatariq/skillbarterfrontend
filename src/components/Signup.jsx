@@ -29,7 +29,7 @@ const Signup = () => {
     e.preventDefault();
 
     try {
-      const res = await axios.post("https://skillbarter-backend-production.up.railway.app/api/signup", formData);
+      const res = await axios.post("https://skillbrter.onrender.com/api/signup", formData);
       if (res.data.success) {
         navigate("/verify", { state: { email: formData.email } });
       } else {
