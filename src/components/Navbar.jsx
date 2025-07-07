@@ -97,7 +97,7 @@ const Navbar = () => {
               <hr className="my-1" />
               <button
                 onClick={() => {
-                  localStorage.removeItem('token');
+                  localStorage.removeItem('email');
                   setDropdownOpen(false);
                   navigate('/login');
                 }}

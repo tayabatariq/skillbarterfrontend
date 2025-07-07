@@ -31,6 +31,10 @@ const Signup = () => {
     try {
       const res = await axios.post("https://skillbrter.onrender.com/api/signup", formData);
       if (res.data.success) {
+        // ✅ Store email in localStorage
+        localStorage.setItem("email", formData.email);
+
+        // ✅ Navigate to OTP verify screen
         navigate("/verify", { state: { email: formData.email } });
       } else {
         alert("Signup failed: " + res.data.message);
@@ -92,7 +96,7 @@ const Signup = () => {
               />
             </div>
 
-            {/* Phone Number */}
+            {/* Phone */}
             <div>
               <label className="block mb-1 font-medium">Phone Number</label>
               <input
@@ -175,6 +179,7 @@ const Signup = () => {
               />
             </div>
 
+            {/* Submit Button */}
             <button
               type="submit"
               className="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700"

@@ -27,6 +27,7 @@ const handleSubmit = async (e) => {
     });
 
     const data = await res.json();
+        localStorage.setItem("email", formData.email);
 
     if (data.success) {
       console.log("Login successful:", data.user);
