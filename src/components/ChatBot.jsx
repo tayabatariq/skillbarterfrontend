@@ -17,7 +17,7 @@ const handleSend = async () => {
   setInput("");
 
   try {
-    const res = await axios.post("http://localhost:8000/api/chatbot", {
+    const res = await axios.post("https://skillbrter.onrender.com/api/chatbot", {
       message: userMessage,
     });
     setChat((prev) => [...prev, { type: "bot", text: res.data.reply }]);
