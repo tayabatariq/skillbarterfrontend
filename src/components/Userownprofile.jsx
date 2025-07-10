@@ -17,7 +17,7 @@ const Userownprofile = () => {
 
     const fetchUser = async () => {
       try {
-        const res = await axios.get(`http://localhost:8000/api/user/${email}`);
+        const res = await axios.get(`https://skillbrter.onrender.com/api/user/${email}`);
         if (res.data.success) {
           setUser(res.data.user);
           setPreviewImage(res.data.user.profileImage || 'https://tse3.mm.bing.net/th/id/OIP.G0-rgY-iYnZgqF_DiS-_oQHaHa?pid=Api&P=0&h=220');
@@ -44,7 +44,7 @@ const handleImageChange = async (e) => {
     formData.append("email", email);
 
     try {
-      const res = await axios.post("http://localhost:8000/api/upload-image", formData);
+      const res = await axios.post("https://skillbrter.onrender.com/api/upload-image", formData);
       setUser(prev => ({ ...prev, profileImage: res.data.imageUrl }));
     } catch (err) {
       console.error("❌ Upload failed", err);

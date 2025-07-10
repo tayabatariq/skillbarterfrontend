@@ -10,7 +10,7 @@ const UserCardList = () => {
   // 🔽 Fetch Users from Backend
   useEffect(() => {
     axios
-      .get("http://localhost:8000/api/users")
+      .get("https://skillbrter.onrender.com/api/users")
       .then((res) => {
         console.log("Fetched users:", res.data);
         setUsers(res.data);
