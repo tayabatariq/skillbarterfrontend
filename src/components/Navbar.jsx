@@ -21,7 +21,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="sticky top-0 max-sm:px-3 left-0 z-50 bg-white shadow-md px-6 py-4 flex items-center justify-between">
+    <nav className="sticky top-0 max-sm:px-3 left-0 z-50 bg-white shadow-md px-5 py-4 flex items-center justify-between">
       {/* Logo */}
       <div className="flex items-center">
         <img
@@ -69,7 +69,7 @@ const Navbar = () => {
             className="flex items-center space-x-2 focus:outline-none"
           >
             <img
-              src="https://via.placeholder.com/40" // Replace with user image later
+              src="https://tse3.mm.bing.net/th/id/OIP.G0-rgY-iYnZgqF_DiS-_oQHaHa?pid=Api&P=0&h=220" // Replace with user image later
               alt="Profile"
               className="w-10 h-10 rounded-full border-2 border-purple-500 object-cover"
             />

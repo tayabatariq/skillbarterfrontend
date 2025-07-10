@@ -6,7 +6,7 @@ const Userownprofile = () => {
   const navigate = useNavigate();
   const [user, setUser] = useState(null);
   const [editMode, setEditMode] = useState(false);
-  const [previewImage, setPreviewImage] = useState('');
+  const [previewImage, setPreviewImage] = useState('https://tse3.mm.bing.net/th/id/OIP.G0-rgY-iYnZgqF_DiS-_oQHaHa?pid=Api&P=0&h=220');
   const email = localStorage.getItem('email');
 
   useEffect(() => {
@@ -17,10 +17,10 @@ const Userownprofile = () => {
 
     const fetchUser = async () => {
       try {
-        const res = await axios.get(`https://skillbrter.onrender.com/api/user/${email}`);
+        const res = await axios.get(`http://localhost:8000/api/user/${email}`);
         if (res.data.success) {
           setUser(res.data.user);
-          setPreviewImage(res.data.user.profileImage || 'https://via.placeholder.com/150');
+          setPreviewImage(res.data.user.profileImage || 'https://tse3.mm.bing.net/th/id/OIP.G0-rgY-iYnZgqF_DiS-_oQHaHa?pid=Api&P=0&h=220');
         }
       } catch (err) {
         console.error("❌ Failed to fetch user:", err);
@@ -34,15 +34,24 @@ const Userownprofile = () => {
     const { name, value } = e.target;
     setUser((prev) => ({ ...prev, [name]: value }));
   };
+const handleImageChange = async (e) => {
+  const file = e.target.files[0];
+  if (file) {
+    setPreviewImage(URL.createObjectURL(file));
 
-  const handleImageChange = (e) => {
-    const file = e.target.files[0];
-    if (file) {
-      const imageURL = URL.createObjectURL(file);
-      setPreviewImage(imageURL);
-      setUser((prev) => ({ ...prev, profileImage: imageURL }));
+    const formData = new FormData();
+    formData.append("image", file);
+    formData.append("email", email);
+
+    try {
+      const res = await axios.post("http://localhost:8000/api/upload-image", formData);
+      setUser(prev => ({ ...prev, profileImage: res.data.imageUrl }));
+    } catch (err) {
+      console.error("❌ Upload failed", err);
     }
-  };
+  }
+};
+
 
   const handleSave = async () => {
     try {

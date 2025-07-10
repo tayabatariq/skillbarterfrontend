@@ -10,7 +10,7 @@ const UserCardList = () => {
   // 🔽 Fetch Users from Backend
   useEffect(() => {
     axios
-      .get("https://skillbrter.onrender.com/api/users")
+      .get("http://localhost:8000/api/users")
       .then((res) => {
         console.log("Fetched users:", res.data);
         setUsers(res.data);
@@ -74,7 +74,7 @@ const UserCardList = () => {
   <div className="bg-white rounded-2xl shadow-md p-6 transition hover:shadow-xl hover:cursor-pointer">
     <div className="flex flex-col items-center">
       <img
-        src="https://img.freepik.com/premium-photo/cute-little-girls-picture-ai-generated_1003721-472.jpg"
+        src="https://tse1.mm.bing.net/th/id/OIP.L6VfXqXPZTM--RtHHuinKwHaHa?pid=Api&P=0&h=220"
         alt={user.name}
         className="w-24 h-24 rounded-full border-4 border-purple-200 mb-4"
       />

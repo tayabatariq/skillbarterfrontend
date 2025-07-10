@@ -20,7 +20,7 @@ const handleSubmit = async (e) => {
   e.preventDefault();
 
   try {
-    const res = await fetch("https://skillbrter.onrender.com/api/login", {
+    const res = await fetch("http://localhost:8000/api/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
@@ -31,7 +31,7 @@ const handleSubmit = async (e) => {
 
     if (data.success) {
       console.log("Login successful:", data.user);
-      navigate("/skills"); // 👈 Redirect to Home
+      navigate("/userprofile"); // 👈 Redirect to Home
     } else {
       alert(data.message || "Login failed");
     }
